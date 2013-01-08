@@ -20,6 +20,9 @@
 			};
 
 			arguments.objectName = $objectName(argumentCollection=arguments);
+
+			structDelete(arguments, "association", false);
+			structDelete(arguments, "position", false);
 		</cfscript>
 		<cfreturn loc.coreErrorMessageOn(argumentCollection=arguments)>
 	</cffunction>
